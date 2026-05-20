@@ -1,6 +1,6 @@
 export type Direction = "ICH_PUNE" | "PUNE_ICH";
 
-export const STOPS = ["Ichalkaranji", "Sangli", "Karad", "Satara", "Pune"] as const;
+export const STOPS = ["Ichalkaranji", "Karad", "Satara", "Pune"] as const;
 export type Stop = (typeof STOPS)[number];
 
 export const SCHEDULE: Record<Direction, { pickup: string; drop: string; from: Stop; to: Stop }> = {
@@ -10,7 +10,7 @@ export const SCHEDULE: Record<Direction, { pickup: string; drop: string; from: S
 
 export const PRICE = 700;
 export const TOTAL_SEATS = 6;
-export const WHATSAPP_NUMBER = "919999999999"; // placeholder
+export const WHATSAPP_NUMBER = "918956999699"; // placeholder
 
 export interface Booking {
   id: string;
