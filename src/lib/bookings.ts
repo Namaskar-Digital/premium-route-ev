@@ -41,7 +41,7 @@ function load(): State {
     const raw = localStorage.getItem(KEY);
     if (!raw) return { bookings: [], blockedDates: [], manualBlocks: [], tripDate: today() };
     const parsed = JSON.parse(raw) as State;
-    return { manualBlocks: [], blockedDates: [], bookings: [], tripDate: today(), ...parsed };
+    return { manualBlocks: [], blockedDates: [], bookings: [], tripDate: today(), ...parsed } as State;
   } catch {
     return { bookings: [], blockedDates: [], manualBlocks: [], tripDate: today() };
   }
