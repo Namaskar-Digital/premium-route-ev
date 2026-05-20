@@ -93,7 +93,7 @@ function Confirmation() {
       </div>
 
       <a
-        href={`https://wa.me/${WHATSAPP_NUMBER}?text=${waText}`}
+        href={`https://wa.me/918956999699?text=${waText}`}
         target="_blank"
         rel="noreferrer"
         className="mt-5 flex w-full items-center justify-center gap-2 rounded-full border border-border bg-card py-3 text-sm font-medium hover:bg-muted transition"
